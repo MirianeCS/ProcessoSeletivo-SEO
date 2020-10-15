@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pet Shop Rocky - A melhor opção de banho e tosa para seu pet desde 2018">
+        <meta property="og:title" content="Pet Shop Rocky"/>
+        <meta property="og:description" content="A melhor opção de banho e tosa para seu pet desde 2018"/>  
+        <meta property="og:image" content="https://www.freepnglogos.com/images/dog-11328.html"/>
+        <title>Pet Shop Rocky - Clientes</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>   
+            <div>
+                <ul>
+                    <li><a class="navigation-link" href="index.html">Início</a></li>
+                    <li><a class="navigation-link" href="sobre.html">Sobre</a></li>
+                    <li><a class="navigation-link active" href="clientes.html">Clientes</a></li>
+                    <li><a class="navigation-link" href="feedback.html">Feeback de Clientes</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h1 class="title-clients"> Tabela de Clientes</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Pet</th>
+                            <th>Raça</th>
+                            <th>Dono</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-cliente">
+                        <tr class="cliente">
+                            <td class="info-pet">Rapadura</td>
+                            <td class="info-raca">Pitbull</td>
+                            <td class="info-dono">Paulo Silva</td>
+                            <td class="info-numero">(15) 999999999</td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="info-pet">Paçoca</td>
+                            <td class="info-raca">Pinscher</td>
+                            <td class="info-dono">Paulo Silva</td>
+                            <td class="info-numero">(15) 999999999</td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="info-pet">Lili</td>
+                            <td class="info-raca">Poodle</td>
+                            <td class="info-dono">Miriane Cardoso</td>
+                            <td class="info-numero">(15) 999999999</td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="info-pet">Fraquinho</td>
+                            <td class="info-raca">Shiba</td>
+                            <td class="info-dono">Vinícius Crepschi</td>
+                            <td class="info-numero">(15) 999999999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <section>            
+            <div class="container-form">
+                <h2 class="subtitle">Adicionar novo cliente</h2>
+                <form id="form-adiciona">
+                    <div class="grupo">
+                        <label for="pet">Nome do Pet:</label>
+                        <input id="pet" name="pet" type="text" placeholder="Digite o nome do Pet aqui" class="adicionar-cliente-form">
+                    </div>
+                    <div class="grupo">
+                        <label for="raca">Raça:</label>
+                        <input id="raca" name="raca" type="text" placeholder="Digite a raça do pet aqui" class="adicionar-cliente-form">
+                    </div>
+                    <div class="grupo">
+                        <label for="dono">Dono:</label>
+                        <input id="dono" name="dono" type="text" placeholder="Digite o nome do dono aqui" class="adicionar-cliente-form">
+                    </div>
+                    <div class="grupo">
+                        <label for="numero">Telefone:</label>
+                        <input id="numero" name="telefone" type="text" placeholder="Digite o telefone de contato aqui" class="adicionar-cliente-form">
+                    </div>
+                </form>
+                <ul id="mensagem-erro"></ul>
+            </div>
+
+            <button id="adicionar-cliente" class="button button-text text-margin">
+                Adicionar Cliente
+            </button>
+
+            <div class="container-form adicionar-errado">
+                <p>Adicionou um cliente errado? Basta clicar duas vezes em cima dele para removê-lo.</p>
+            </div>
+        </section>
+
+        <script src="js/form.js"></script>
+        <script src="js/remover.js"></script>
+
+    </body>
+</html>

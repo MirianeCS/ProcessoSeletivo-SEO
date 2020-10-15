@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../image/dog.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 25%;
+    background-position-x: right;
+    background-position-y: bottom;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: rgb(80, 121, 168);
+	height: 3em;
+	color: #FFF;
+    margin-bottom: 1em;
+    opacity: 90%;
+}
+
+ul{
+    background-color: rgb(80, 121, 168);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+}
+
+table{
+	width: 50%;
+    margin-bottom : 1vw;
+    margin-left: 1vw;
+    table-layout: fixed;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td{
+    padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+    text-align: center;
+    color: black;   
+} 
+
+th{
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+    text-align: center;
+    color: white;
+}
+
+th{
+	font-weight: bold;
+	background-color:  rgb(80, 121, 168);
+}
+
+#contato{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation-link {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+}
+
+.navigation-link-block {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+  
+.navigation-link:hover {
+   background-color: rgb(32, 98, 173);
+}
+
+.active{
+    background-color:  rgb(32, 98, 173);
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.quadrado {
+    /*background-image: url('../image/dog-background.png');*/
+    /* background-size: 100% 100%; */
+    background-color:  rgb(80, 121, 168);
+    flex: 0 15%;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.quadrado:hover, .button:hover{
+    background-color: rgb(32, 98, 173);
+}
+
+.name{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 70px;
+    color: rgb(14, 77, 150);
+}
+
+.subtitle{
+    font-family: 'Sansita Swashed', cursive;
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(14, 77, 150);
+    opacity: 90%;
+}
+
+.title-clients{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 30px;
+    color: rgb(14, 77, 150);
+}
+
+.split{
+    height: 100%;
+    width: 50%;
+}
+
+.text-margin{
+    margin-left: 1vw; 
+}
+
+.button{
+    background-color:  rgb(80, 121, 168);
+    border-radius: 10px;
+    width: 15%;
+    margin-top: 2%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-text{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.button-contact{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.feedback{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.feedback-block{
+    background-color:  rgb(155, 182, 212);
+    flex: 0 20%;
+    flex-direction: column;
+    border-radius: 1px;
+    border: 1px solid rgb(14, 77, 150);
+    padding: 15px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.font-size{
+    font-size: 16px;
+}
+
+#adicionar-cliente{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.adicionar-cliente-form{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.container-form{
+	width: 30%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.grupo{
+    margin-top: 2%;
+}
+
+#mensagem-erro{
+	color: red;
+	margin-bottom: 10px;
+}
+
+.fade{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.adicionar-errado{
+    font-style: italic;
+    font-size: 14px;
+    color: gray;
+}
